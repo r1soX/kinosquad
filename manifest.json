@@ -1,0 +1,32 @@
+﻿{
+    "manifest_version": 2,
+    "name": "KinoSquad",
+    "description": "KinoSquad - Telegram Автора @r1soX | Просмотр фильмов и сериалов с Кинопоиска",
+    "version": "1.0",
+    "icons": {
+        "128": "icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "icon16.png",
+        "default_title": "KinoSquad - Просмотр фильмов и сериалов с Кинопоиска"
+    },
+    "content_scripts": [{
+        "matches": [
+				"*://www.kinopoisk.ru/*/*"
+				
+        ],
+        "js": [
+            "films.js"
+        ],
+		"persistent": true,
+		"all_frames": true,
+        "run_at": "document_end"
+		
+    }],
+	"permissions": [
+        "tabs",
+        "*://github.com/*",
+        "http://localhost:8080/*",
+		"*://githubusercontent.com/*"
+    ]
+}
