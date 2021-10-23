@@ -1,5 +1,5 @@
 let xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://trashsiteversioncheck.000webhostapp.com/flm');
+xhr.open('GET', 'https://kinosquad.ru/flm');
 xhr.onload = function() {
     if (xhr.readyState !== 4) return;
     if (xhr.status === 200) {
