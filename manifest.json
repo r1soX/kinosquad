@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "KinoSquad",
     "description": "KinoSquad - Telegram Автора @r1soX | Просмотр фильмов и сериалов с Кинопоиска",
-    "version": "1.0",
+    "version": "1.1",
     "icons": {
         "128": "icon128.png"
     },
